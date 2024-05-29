@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>portfolio</title>
+     <link rel="stylesheet" href="styles1.css">
+    <style>
+        #name{
+    background-color: rgba(10, 27, 72, 0.98)
+    
+    
+}
+body{
+    background-color: rgba(16, 40, 33, 0.933);
+
+
+
+}
+.pos{
+    margin-left:75px;
+    /* background-color:rgb(236, 227, 227); */
+   
+    padding:50px 20%;
+    align-items: center;
+
+    font-size: 25px;
+    /* margin:10px; */
+    display:inline-block;
+    transition: .3s;
+    font-weight: 720;
+    text-decoration: none;
+    justify-content: space-between;
+    
+
+
+}
+
+.Home{
+    position: relative;
+    width:100%;
+    justify-content: space-between;
+    height: 100vh;
+    background:url(Purple\ Illustrated\ Mountain\ 1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgb(78, 102, 120); */
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+.box{
+    position:relative;
+    width:300px;
+    height: 300px;
+    background:rgba(0,0,0,0.5);
+    border-radius: 50%;
+    overflow: hidden;
+    bottom:600;
+    left:780;
+}
+  
+.box::before{
+    content: '';
+    position: absolute;
+    inset: -30px 80px;
+    background:linear-gradient(315deg,#00ccff,#d400d4);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+
+
+}
+.box:hover::before{
+    inset: -20px 0px;
+}
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+.box::after{
+    content:'';
+    position:absolute;
+    inset:6px;
+    background: rgba(16, 40, 33, 0.933);
+    ;
+   border-radius: 50%;
+   z-index: 1;
+}
+#image{
+    position:absolute;
+    inset:30px;
+    border:6px solid #070a1c;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+#image img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    
+    object-fit:cover;
+}
+.box:hover #image img{
+    opacity: 0;
+}
+.container{
+    position: absolute;
+    top: 70;
+    right:100;
+
+}
+
+    </style>
+    </head>
+    <body>
+        <div id="name">
+       <font size=7 color="white">portfolio</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+    
+        <a href="home.html"><font size="5" color="white">About</font></a>
+       <font size></font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="skills.html"><font size="5" color="white">skills</a>
+        <font size></font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="project.html"><font size="5" color="white">projects</a>
+            <!-- <font size></font> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<a href="contact"><font size="5" color="white">contact</a> -->
+        </div>
+        <section class="Home">
+            <div id="homecontent">
+                <h3>
+                    Hello, It's Me </h3>
+                    <font size="10" color="white">
+                    Hemanth vemulapelly</font>
+                   
+                  <p>  Aspiring for Full Stack Developer.<br>
+                     Iam very enthusiastic to learn a new things.</p>
+                     
+                
+            </div>
+        </section>
+        <div id="container">
+        <div class="box">
+        <div id="image">
+            <img src="1.jpg" >
+            
+        </div>
+        </div>
+        </div>
+    </body>
+</html>
